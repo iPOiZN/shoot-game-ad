@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="ad.size" content="width=300,height=250" />
+		<script type="text/javascript">
+			var clickTag = "{{CLICK_URL}}";
+		</script>
+		<title>Banner VEON</title>
+		<link rel="stylesheet" href="style.min.css" />
+	</head>
+	<body>
+		<div class="content">
+			<div class="aim"></div>
+			<div class="logo">
+				<img src="images/logo.png" alt="logo" />
+			</div>
+			<h3 class="title">Shoot the germs</h3>
+			<div class="shirt">
+				<img src="images/shirt.png" alt="shirt" />
+				<img src="images/dirt.png" alt="dirt" class="dirt" />
+			</div>
+
+			<div class="bacteries">
+				<img
+					src="images/bacteries/bacteria6.svg"
+					alt="bacteria"
+					class="bacteria bacteria1"
+				/>
+				<img
+					src="images/bacteries/bacteria7.svg"
+					alt="bacteria"
+					class="bacteria bacteria2"
+				/>
+				<img
+					src="images/bacteries/bacteria8.svg"
+					alt="bacteria"
+					class="bacteria bacteria3"
+				/>
+				<img
+					src="images/bacteries/bacteria9.svg"
+					alt="bacteria"
+					class="bacteria bacteria4"
+				/>
+				<img
+					src="images/bacteries/bacteria10.svg"
+					alt="bacteria"
+					class="bacteria bacteria5"
+				/>
+			</div>
+
+			<!-- End actions -->
+			<div class="end-title">
+				<img src="images/endTitle.png" alt="end-title" />
+			</div>
+
+			<button onclick="openNewTab()" class="end-btn">
+				Get more safety tips
+			</button>
+		</div>
+
+		<audio
+			src="https://freesound.org/people/MATRIXXX_/sounds/414888/download/414888__matrixxx__retro-laser-shot-04.wav"
+		></audio>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+			rel="stylesheet"
+		/>
+	</body>
+	<script src="script.min.js"></script>
+	<script>
+		function openNewTab() {
+			if (clickTag) {
+				window.open(clickTag, "_blank");
+			} else {
+				console.error("URL is not set");
+			}
+		}
+	</script>
+</html>
